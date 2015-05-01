@@ -1,0 +1,32 @@
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter\DataSorter\obj\Release\Interop.Excel.dll
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter\DataSorter\obj\Release\DataSorter.csproj.ResolveComReference.cache
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter\DataSorter\bin\Release\DataSorter.exe
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter\DataSorter\bin\Release\DataSorter.pdb
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter\DataSorter\bin\Release\Microsoft.Office.Interop.Excel.dll
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter\DataSorter\bin\Release\Microsoft.Vbe.Interop.dll
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter\DataSorter\bin\Release\office.dll
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter\DataSorter\bin\Release\Microsoft.Office.Interop.Excel.xml
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter\DataSorter\bin\Release\office.xml
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter\DataSorter\bin\Release\Interop.Excel.dll
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter\DataSorter\obj\Release\ResolveAssemblyReference.cache
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter\DataSorter\obj\Release\DataSorter.DataSorter.resources
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter\DataSorter\obj\Release\DataSorter.Properties.Resources.resources
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter\DataSorter\obj\Release\DataSorter.csproj.GenerateResource.Cache
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter\DataSorter\obj\Release\DataSorter.exe
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter\DataSorter\obj\Release\DataSorter.pdb
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\obj\Release\Interop.Excel.dll
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\obj\Release\DataSorter.csproj.ResolveComReference.cache
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\obj\Release\DataSorter.exe
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\obj\Release\DataSorter.pdb
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\bin\Release\DataSorter.exe
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\bin\Release\DataSorter.pdb
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\bin\Release\Microsoft.Office.Interop.Excel.dll
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\bin\Release\Microsoft.Vbe.Interop.dll
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\bin\Release\office.dll
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\bin\Release\Microsoft.Office.Interop.Excel.xml
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\bin\Release\office.xml
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\bin\Release\Interop.Excel.dll
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\obj\Release\ResolveAssemblyReference.cache
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\obj\Release\DataSorter.DataSorter.resources
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\obj\Release\DataSorter.Properties.Resources.resources
+E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\obj\Release\DataSorter.csproj.GenerateResource.Cache
