@@ -62,3 +62,19 @@ E:\work\PERIODS\clusterization_genetic_algorithm статистика испол
 E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\obj\Debug\DataSorter.DataSorter.resources
 E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\obj\Debug\DataSorter.Properties.Resources.resources
 E:\work\PERIODS\clusterization_genetic_algorithm статистика использования параметров\DataSorter_different parameters\DataSorter\obj\Debug\DataSorter.csproj.GenerateResource.Cache
+E:\work\PERIODS\clusterization_genetic_algorithm\DataSorter_different parameters\DataSorter\obj\Debug\Interop.Excel.dll
+E:\work\PERIODS\clusterization_genetic_algorithm\DataSorter_different parameters\DataSorter\obj\Debug\DataSorter.csproj.ResolveComReference.cache
+E:\work\PERIODS\clusterization_genetic_algorithm\DataSorter_different parameters\DataSorter\obj\Debug\DataSorter.exe
+E:\work\PERIODS\clusterization_genetic_algorithm\DataSorter_different parameters\DataSorter\obj\Debug\DataSorter.pdb
+E:\work\PERIODS\clusterization_genetic_algorithm\DataSorter_different parameters\DataSorter\obj\Debug\ResolveAssemblyReference.cache
+E:\work\PERIODS\clusterization_genetic_algorithm\DataSorter_different parameters\DataSorter\obj\Debug\DataSorter.DataSorter.resources
+E:\work\PERIODS\clusterization_genetic_algorithm\DataSorter_different parameters\DataSorter\obj\Debug\DataSorter.Properties.Resources.resources
+E:\work\PERIODS\clusterization_genetic_algorithm\DataSorter_different parameters\DataSorter\obj\Debug\DataSorter.csproj.GenerateResource.Cache
+E:\work\PERIODS\clusterization_genetic_algorithm\DataSorter_different parameters\DataSorter\bin\Debug\DataSorter.exe
+E:\work\PERIODS\clusterization_genetic_algorithm\DataSorter_different parameters\DataSorter\bin\Debug\DataSorter.pdb
+E:\work\PERIODS\clusterization_genetic_algorithm\DataSorter_different parameters\DataSorter\bin\Debug\Microsoft.Office.Interop.Excel.dll
+E:\work\PERIODS\clusterization_genetic_algorithm\DataSorter_different parameters\DataSorter\bin\Debug\Microsoft.Vbe.Interop.dll
+E:\work\PERIODS\clusterization_genetic_algorithm\DataSorter_different parameters\DataSorter\bin\Debug\office.dll
+E:\work\PERIODS\clusterization_genetic_algorithm\DataSorter_different parameters\DataSorter\bin\Debug\Microsoft.Office.Interop.Excel.xml
+E:\work\PERIODS\clusterization_genetic_algorithm\DataSorter_different parameters\DataSorter\bin\Debug\office.xml
+E:\work\PERIODS\clusterization_genetic_algorithm\DataSorter_different parameters\DataSorter\bin\Debug\Interop.Excel.dll

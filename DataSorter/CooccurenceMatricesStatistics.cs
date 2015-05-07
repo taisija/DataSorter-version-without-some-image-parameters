@@ -91,28 +91,28 @@ namespace DataSorter
             }
             return entropy;
         }
-        public double[] GetCorreletion()
+        public double[] GetCorrelation()
         {
-            double[] correletion = new double[matricesNumber];
+            double[] correlation = new double[matricesNumber];
             double[] rowSum = new double[matriceSize];
             double[] columnSum = new double[matriceSize];
             double meanX = 0, meanY = 0, sdX = 0, sdY = 0;
-            correletion = new double[matricesNumber];
+            correlation = new double[matricesNumber];
             for (int currentMatrixNumber = 0; currentMatrixNumber < matricesNumber; currentMatrixNumber++)
             {
                 rowSum = new double[matriceSize];
                 columnSum = new double[matriceSize];
                 meanX = 0; meanY = 0; sdX = 0; sdY = 0;
-                correletion[currentMatrixNumber] = 0;
+                correlation[currentMatrixNumber] = 0;
                 for (int i = 0; i < matriceSize; i++)
                     for (int j = 0; j < matriceSize; j++)
                     {
                         rowSum[i] += cooccurenceMatrices[currentMatrixNumber][i, j];
                         columnSum[j] += cooccurenceMatrices[currentMatrixNumber][i, j];
-                        correletion[currentMatrixNumber] += i * j * cooccurenceMatrices[currentMatrixNumber][i, j]/65025.0;
+                        correlation[currentMatrixNumber] += i * j * cooccurenceMatrices[currentMatrixNumber][i, j]/65025.0;
                     }
                 //probability value must be from 0 to 1 
-                correletion[currentMatrixNumber] /= matricesSum[currentMatrixNumber];
+                correlation[currentMatrixNumber] /= matricesSum[currentMatrixNumber];
                 for (int i = 0; i < matriceSize; i++)
                 {
                     meanX += i * rowSum[i]/255.0;
@@ -127,10 +127,10 @@ namespace DataSorter
                 sdX -= meanX * meanX;
                 sdY -= meanY * meanY;
                 sdX = Math.Sqrt(sdX); sdY = Math.Sqrt(sdY);
-                correletion[currentMatrixNumber] -= meanY * meanX;
-                correletion[currentMatrixNumber] /= sdX * sdY;
+                correlation[currentMatrixNumber] -= meanY * meanX;
+                correlation[currentMatrixNumber] /= sdX * sdY;
             }
-            return correletion;
+            return correlation;
         }
         public double[] GetContrastFromContrastHist()
         {

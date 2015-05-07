@@ -326,7 +326,7 @@ namespace DataSorter
                     param[0] = CMS.GetContrast();
                     param[1] = CMS.GetAngularSecondMoment();
                     param[2] = CMS.GetEntrophy();
-                    param[3] = CMS.GetCorreletion();
+                    param[3] = CMS.GetCorrelation();
                     param[4] = CMS.GetContrastFromContrastHist();
                     param[5] = CMS.GetAngularSecondMomentFromContrastHist();
                     param[6] = CMS.GetEntrophyFromContrastHist();
@@ -340,7 +340,7 @@ namespace DataSorter
                         testImageResultsNames[i][paramCounter + j * 8] = "GetContrast(0," + MatricesParam[0, j].ToString() +"),(1,"+ MatricesParam[1, j].ToString()+")";
                         testImageResultsNames[i][paramCounter + j * 8 + 1] = "GetAngularSecondMoment(0," + MatricesParam[0, j].ToString() + "),(1," + MatricesParam[1, j].ToString() + ")";
                         testImageResultsNames[i][paramCounter + j * 8 + 2] = "GetEntrophy(0," + MatricesParam[0, j].ToString() + "),(1," + MatricesParam[1, j].ToString() + ")";
-                        testImageResultsNames[i][paramCounter + j * 8 + 3] = "GetCorreletion(0," + MatricesParam[0, j].ToString() + "),(1," + MatricesParam[1, j].ToString() + ")";
+                        testImageResultsNames[i][paramCounter + j * 8 + 3] = "GetCorrelation(0," + MatricesParam[0, j].ToString() + "),(1," + MatricesParam[1, j].ToString() + ")";
                         testImageResultsNames[i][paramCounter + j * 8 + 4] = "GetContrastFromContrastHist(0," + MatricesParam[0, j].ToString() + "),(1," + MatricesParam[1, j].ToString() + ")";
                         testImageResultsNames[i][paramCounter + j * 8 + 5] = "GetAngularSecondMomentFromContrastHist(0," + MatricesParam[0, j].ToString() + "),(1," + MatricesParam[1, j].ToString() + ")";
                         testImageResultsNames[i][paramCounter + j * 8 + 6] = "GetEntrophyFromContrastHist(0," + MatricesParam[0, j].ToString() + "),(1," + MatricesParam[1, j].ToString() + ")";
@@ -355,35 +355,38 @@ namespace DataSorter
         public bool ParamFromCOoccurenceMatrix_Some(int[,] MatricesParam, int MatricesNumber)
         {
             double[][] param;
-            if (((MatricesParam.Length / 2) == MatricesNumber) && ((paramCounter + MatricesNumber * 3 - 1) < paramNum))
+            int parNum = 3;
+            if (((MatricesParam.Length / 2) == MatricesNumber) && ((paramCounter + MatricesNumber * parNum - 1) < paramNum))
             {
-                param = new double[3][];
+                param = new double[parNum][];
                 for (int i = 0; i < testImageNum; i++)
                 {
                     CooccurenceMatricesStatistics CMS = new CooccurenceMatricesStatistics(MatricesParam, MatricesNumber, testImageList[i], testImageSize[0, i], testImageSize[1, i]);
                     param[0] = CMS.GetContrast();
-                    param[1] = CMS.GetAngularSecondMoment();
                     CMS.GetEntrophy();
-                    CMS.GetCorreletion();
+                    param[1] = CMS.GetCorrelation();
                     CMS.GetContrastFromContrastHist();
-                    param[2] = CMS.GetAngularSecondMomentFromContrastHist();
+                    param[2] = CMS.GetEntrophyFromContrastHist();
                     for (int j = 0; j < MatricesNumber; j++)
                     {
-                        for (int k = 0; k < 3; k++)
+                        for (int k = 0; k < parNum; k++)
                         {
-                            testImageResults[i][paramCounter + j * 3 + k] = param[k][j];
+                            testImageResults[i][paramCounter + j * parNum + k] = param[k][j];
                         }
-                        testImageResultsNames[i][paramCounter + j * 3] = "GetContrast(0," + MatricesParam[0, j].ToString() + "),(1," + MatricesParam[1, j].ToString() + ")";
-                        testImageResultsNames[i][paramCounter + j * 3 + 1] = "GetAngularSecondMoment(0," + MatricesParam[0, j].ToString() + "),(1," + MatricesParam[1, j].ToString() + ")";
-                        testImageResultsNames[i][paramCounter + j * 3 + 2] = "GetAngularSecondMomentFromContrastHist(0," + MatricesParam[0, j].ToString() + "),(1," + MatricesParam[1, j].ToString() + ")";
+                        testImageResultsNames[i][paramCounter + j * parNum] = "GetContrast(0," + MatricesParam[0, j].ToString() + "),(1," + MatricesParam[1, j].ToString() + ")";
+                        testImageResultsNames[i][paramCounter + j * parNum + 1] = "GetCorrelation(0," + MatricesParam[0, j].ToString() + "),(1," + MatricesParam[1, j].ToString() + ")";
+                    //    testImageResultsNames[i][paramCounter + j * parNum + 2] = "GetContrastFromContrastHist(0," + MatricesParam[0, j].ToString() + "),(1," + MatricesParam[1, j].ToString() + ")";
+                        testImageResultsNames[i][paramCounter + j * parNum + 2] = "GetEntrophyFromContrastHist(0," + MatricesParam[0, j].ToString() + "),(1," + MatricesParam[1, j].ToString() + ")";
+                    //    testImageResultsNames[i][paramCounter + j * parNum + 4] = "GetMeanFromContrastHist(0," + MatricesParam[0, j].ToString() + "),(1," + MatricesParam[1, j].ToString() + ")";
+                   
                     }
                 }
-                paramCounter += MatricesNumber * 3;
+                paramCounter += MatricesNumber * parNum;
                 return true;
             }
             return false;
         }
-        public double[,] Correletion()
+        public double[,] Correlation()
         {
             double[,] cor;
             double[] med;
@@ -411,7 +414,7 @@ namespace DataSorter
             }
             double den = 0;
            for (int i = 0; i < paramCounter; i++)
-                for (int j = i; j < paramCounter; j++)
+                for (int j = 0; j < paramCounter; j++)
                 {
                     for (int k = 0; k < testImageNum; k++)
                             cor[i, j] += (TestImageResults[k][i]-med[i]) * (TestImageResults[k][j]- med[j]);
@@ -421,11 +424,11 @@ namespace DataSorter
                 }
             return cor;
         }
-        public double[,] CorreletionT(double th)
+        public double[,] CorrelationT(double th)
         {
-            double[,] cor = Correletion();
+            double[,] cor = Correlation();
             for (int i = 0; i < paramCounter; i++)
-                for (int j = i; j < paramCounter; j++)
+                for (int j = 0; j < paramCounter; j++)
                 {
                     if (cor[i, j] > th) cor[i, j] = 1;
                     else cor[i, j] = 0;
